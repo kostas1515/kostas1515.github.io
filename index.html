@@ -3,19 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <title>Kostas's blog</title>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <script src="js/typeWriter.js"></script>
   <link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
   <link rel="stylesheet" type="text/css" href="mycss/mycss.css">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 
 </head>
 
 <body style="overflow-x: hidden;">
-<div class="row">
+<div class="row" style="background-color:#ffffff">
 	<div class="container">
-			<img  src="images/wallpaper.jpg" class="img-responsive" width="100%" height="50%">
+		<div class="row">
+			<img  src="images/detections.gif" class="img-responsive" width="100%">
+		</div>
 	</div>
 </div>
 
@@ -29,14 +33,15 @@
 		    <ul class="nav navbar-nav">
 		      <li class="active"><a href="#about">About me</a></li>
 		      	<div class="dropdown">
-				  <div class="dropbtn">Projects</div>
+				  <div class="dropbtn">Past projects</div>
 				  <div class="dropdown-content">
 				    <a href="featselect.html">Text feature selection</a>
 				    <a href="regex.html">Regular expressions</a>
 				  </div>
 				</div>
-				<li><a href="stories.html">Stories</a></li>
-
+		      <li><a href="#research">My research</a></li>
+			  <li><a href="#projects">My projects</a></li>
+		      <li><a href="#contact">Contact</a></li>
 		    </ul>
 		    <ul class="nav navbar-nav navbar-right">
 		      <li><a href="https://github.com/kostas1515/"><i class="fab fa-github"></i>  Github</a></li>
@@ -52,9 +57,9 @@
 		</div>
 		<div class="col-sm-6 sm_text">
 			<h3><small>
-				My name is Konstantinos Alexandridis and I am a PhD Student in the University of Liverpool. I am part of the SMARTlab team and the CDT in Distributed Algorithms group. My academic supervisors are Dr Shan Luo and Dr Michael Bane. I am a graduate from Democritus university of Thrace with a degree on Electrical and Computer Engineering. My academic interests are in machine learning, deep learning, data science and electronics.
+				My name is Konstantinos Alexandridis and I am a PhD Student in the University of Liverpool. I am part of the <a href="https://smartlab.csc.liv.ac.uk/">Smartlab</a> team and the CDT in <a href='https://www.liverpool.ac.uk/distributed-algorithms-cdt/'>Distributed Algorithms</a> group. My academic supervisors are Dr <a href="https://shanluo.github.io/">Shan Luo</a> and Dr <a href="https://www.csc.liv.ac.uk/~anguyen/">Anh Nguyen</a>. I am a graduate from Democritus university of Thrace with a degree on Electrical and Computer Engineering. My academic interests are in computer vision, imbalanced image classification, imbalanced object detection.
 				<br><br>
-				In my free time, I like playing chess, board games,listening to music and doing sports. I also enjoy reading about the newest technologies, space and engineering.
+				In my free time, I like playing chess, board games, listening to music and doing sports. I also enjoy reading about the newest technologies, space and engineering.
 			</small></h3>
 
 		</div>
@@ -77,20 +82,33 @@
 		</div>
 			<div class="col-sm-6 sm_text">
 			<h3><small>
-				My research is on Drone Detection using video processing. The main goal of the research is to build a robust and accurate drone detection system that can identify small UAVs, around sensitive areas like airports. It should also provide additional information about the behaviour of the drones and the possible danger they impose.
-				<br><br>
-				The main challenge of the project is to have a system that operates using low amount of power while maintaining the detection performance. Using current low power processors like GPU, FPGAs or other energy efficient massively parallel systems, such as the Graphcore IPU, we can optimise the detection algorithms for these architectures. 
+				My research focuses on large scale image recognition. In large scale image recognition, data are not balanced or curated because they are gathered in large volumes and annotation of all object instances is intractable. In this scenario, the data may be imbalanced, which means that there may objects that appear frequently in the dataset while there may be other that are unique and do not appear frequently. Under this realistic scenario, models trained with imbalanced data may have good performance in identifying the frequent objects of the dataset but they may fail to identify unique objects. My reseach aims to develop methods that tackle the long tailed recognition problem, so that the models can have better performance in detecting and recognising all the objects in the dataset.
 			</small></h3>
 		</div>
 		<div class="col-sm-6">
 			<center>
-					<img src="images/drone-detection.png" class="img-rounded" width="40%" onmouseover="typeWriter()">
+					<img src="images/large_scale_det.jpg" class="img-rounded" width="100%">
 					<div class="caption">
-						<p id="demo"></p>
+	          			Example of Large Scale Detection
 	        		</div>
 			</center>
 		</div>
 	</div>
+
+	<div class="row" id="projects">
+		<div class="col-sm-12 ">
+			<h1>My Projects</h1>
+			<div class="list-group">
+				<li class="list-group-item">Long tailed Instance Segmentation using Extreme Value Distribution - Poster Presentation in the Student Session of AI UK 2022 <a style="margin-top:-0.45em;float:right;" class="btn btn-primary btn-sm" href="pdf/Long_Tail_Detection_poster.pdf" role="button">Poster</a></li>
+				<li class="list-group-item">Scalable Voting Classifier based on Genetic Algorithms-Siemens AI Challenge <a style="margin-top:-0.45em;float:right;" class="btn btn-primary btn-sm" href="pdf/Scalable Voting Approach based on Genetic Algorithms.pdf" role="button">Technical Report</a> <a style="margin-right:0.45em;margin-top:-0.45em;float:right;" class="btn btn-success btn-sm" href="https://github.com/kostas1515/siemans_ai_competition" role="button">Code</a></li>
+				<li class="list-group-item">Team UoL HPC-CIUK2020 HPC Cluster Competition<a style="margin-top:-0.45em;float:right;" class="btn btn-info btn-sm" href="https://www.scd.stfc.ac.uk/Pages/CIUK-2020-Cluster-Challenge.aspx" role="button">Website</a></li>
+			  </div> 
+
+
+		</div>
+
+	</div>
+	
 
 	<div class="row" id="contact">
 		<div class="col-sm-12 ">
@@ -98,15 +116,31 @@
 		</div>
 			<div class="col-sm-6 sm_text">
 			<h3><small>
-				You can reach me either by email at <b>k.alexandridis@liverpool.ac.uk</b> or connect with me on <a href="https://github.com/kostas1515/">Github</a> or <a href="https://www.linkedin.com/in/konstantinos-alexandridis-283772135/">Linkedin</a>. You can find me in Chadwick Building, room G73 in the University of Liverpool.
+				You can reach me either by email at <b>k.alexandridis@liverpool.ac.uk</b> or connect with me on <a href="https://github.com/kostas1515/">Github</a> or <a href="https://www.linkedin.com/in/konstantinos-alexandridis-283772135/">Linkedin</a>.
 			</small></h3>
 		</div>
 		<div class="col-sm-6">
-			<center>
-				<a href="https://www.liverpool.ac.uk">
-					<img src="images/liverpool_logo.svg" class="img-rounded" width="40%">
-				</a>
-			</center>
+			<div class="col-sm-4">
+					<a href="https://www.liverpool.ac.uk">
+						<img src="images/liverpool_logo.svg" class="img-rounded" width="100%">
+					</a>
+			</div>
+				<div class="col-sm-4"><center>
+					<a href="https://www.liverpool.ac.uk/distributed-algorithms-cdt/">
+						<img src="images/cdt_log.png" class="img-rounded" width="100%">
+					</a>
+				</center>
+			</div>
+			<div class="col-sm-4">
+				<center>
+					<a href="https://smartlab.csc.liv.ac.uk/">
+						<img src="images/smartlab_logo.png" class="img-rounded" width="50%">
+					</a>
+				</center>
+			</div>
+				
+			</div>
+			
 		</div>
 	</div>
 
