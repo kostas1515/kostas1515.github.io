@@ -6,17 +6,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/typeWriter.js"></script>
   <link href="fontawesome/css/all.css" rel="stylesheet"> <!--load all styles -->
   <link rel="stylesheet" type="text/css" href="mycss/mycss.css">
 
 </head>
 
 <body style="overflow-x: hidden;">
-<div class="row" style="background-color:#424242">
+<div class="row">
 	<div class="container">
-		<div class="row">
-			<img  src="images/interstellar.png" class="img-responsive" width="100%">
-		</div>
+			<img  src="images/wallpaper.jpg" class="img-responsive" width="100%" height="50%">
 	</div>
 </div>
 
@@ -29,8 +28,15 @@
 		    </div>
 		    <ul class="nav navbar-nav">
 		      <li class="active"><a href="#about">About me</a></li>
-		      <li><a href="#research">My research</a></li>
-		      <li><a href="#contact">Contact</a></li>
+		      	<div class="dropdown">
+				  <div class="dropbtn">Projects</div>
+				  <div class="dropdown-content">
+				    <a href="featselect.html">Text feature selection</a>
+				    <a href="regex.html">Regular expressions</a>
+				  </div>
+				</div>
+				<li><a href="stories.html">Stories</a></li>
+
 		    </ul>
 		    <ul class="nav navbar-nav navbar-right">
 		      <li><a href="https://github.com/kostas1515/"><i class="fab fa-github"></i>  Github</a></li>
@@ -48,7 +54,7 @@
 			<h3><small>
 				My name is Konstantinos Alexandridis and I am a PhD Student in the University of Liverpool. I am part of the SMARTlab team and the CDT in Distributed Algorithms group. My academic supervisors are Dr Shan Luo and Dr Michael Bane. I am a graduate from Democritus university of Thrace with a degree on Electrical and Computer Engineering. My academic interests are in machine learning, deep learning, data science and electronics.
 				<br><br>
-				In my free time, I like playing chess, board games,listening to music and doing sports. I also enjoy reading about the newest technologies, space and bio-engineering.
+				In my free time, I like playing chess, board games,listening to music and doing sports. I also enjoy reading about the newest technologies, space and engineering.
 			</small></h3>
 
 		</div>
@@ -78,9 +84,9 @@
 		</div>
 		<div class="col-sm-6">
 			<center>
-					<img src="images/drone-detection.png" class="img-rounded" width="40%">
+					<img src="images/drone-detection.png" class="img-rounded" width="40%" onmouseover="typeWriter()">
 					<div class="caption">
-	          			Drone detection
+						<p id="demo"></p>
 	        		</div>
 			</center>
 		</div>
