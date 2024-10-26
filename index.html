@@ -38,8 +38,8 @@
 				    <a href="regex.html">Regular expressions</a>
 				  </div>
 				</div>
-		      <li><a href="#research">My research</a></li>
-			  <li><a href="#projects">My projects</a></li>
+			  <li><a href="#publications">My publications</a></li>
+			  <li><a href="#competitions">Competitions</a></li>
 		      <li><a href="#contact">Contact</a></li>
 		    </ul>
 		    <ul class="nav navbar-nav navbar-right">
@@ -55,19 +55,25 @@
 			<h1>About me</h1>
 		</div>
 		<div class="col-sm-6 sm_text">
-			<h3><small>
-				My name is Konstantinos Alexandridis and I am a PhD graduate from King's College London, working in Computer Vision research. 
-				My academic supervisors were Dr <a href="https://shanluo.github.io/">Shan Luo</a> and Dr <a href="https://www.csc.liv.ac.uk/~anguyen/">Anh Nguyen</a> and my thesis was about long-tailed image classification, object detection and instance segmentation.
-				I did my masters in Electrical and Computer Engineering at Democritus University of Thrace. My academic interests are in computer vision and machine learning.
-				<br><br>
-				In my free time, I like playing chess, going to art galleries, playing board games, listening to music and doing sports. I also enjoy reading about the newest technologies, space, engineering and politics.
-			</small></h3>
+			<div class="row" >
+			<h4>
+				My name is Konstantinos Alexandridis and I am a computer vision research scientist at Huawei Noah's Ark Lab, in London, working under <a href="https://jiankangdeng.github.io/">Jiankang Deng</a> on multi modal large language models.
+				I graduated from King's College London in 2024, under the supervision of Dr <a href="https://shanluo.github.io/">Shan Luo</a> and Dr <a href="https://www.csc.liv.ac.uk/~anguyen/">Anh Nguyen</a> and my PhD thesis was about long-tailed image classification, object detection and instance segmentation.
+				I did my masters in Electrical and Computer Engineering at Democritus University of Thrace, Greece.
+			</h4>
+			</div>
+			<div class="row" >
+				<h4>
+					I am a reviewer for many conferences such as CVPR, ICCV, ECCV, ACCV and journals like International Journal of Coumputer Vision, IEEE-Transactions in Image Processing and Information Fusion.
+					I was selected as an outstanding reviewer in <a href="https://eccv.ecva.net/Conferences/2024/Reviewers">ECCV2024</a>.
+				</h4>				
+			</div>
 
 		</div>
 
 		<div class="col-sm-6">
 			<center>
-					<img src="images/profil.png" class="img-circle" width="40%">
+					<img src="images/profil.jpg" class="img-square" width="25%">
 					<div class="caption">
 	          		<div class="well">
 	          			<code>from coffee import *</code>
@@ -77,37 +83,188 @@
 		</div>
 	</div>
 
-	<div class="row" id="research">
-		<div class="col-sm-12 ">
-			<h1>PhD Research</h1>
-		</div>
-			<div class="col-sm-6 sm_text">
-			<h3><small>
-				My PhD was on imbalanced image recognition. In imbalanced image recognition, data are not balanced or curated because they are gathered in large volumes and annotation of all object instances is intractable. In this scenario, the data may be long-tailed, which means that there may be objects that appear frequently in the dataset while there may be other that are unique and do not appear frequently. Under this realistic scenario, models trained with imbalanced data may have good performance in identifying the frequent objects of the dataset but they may fail to identify rare objects. My reseach aims to develop methods that tackle the long tailed recognition problem, so that the models can have better performance in detecting and recognising all the objects in the dataset.
-			</small></h3>
 
-			<h3><small>I also serve as a reviewer for CVPR, ICCV and ECCV since 2022.</small>
+	<div class="row" id="publications">
+		<div class="col-sm-12 ">
+			<h1>My Publications</h1>
+			<div class="list-group">
+
+				<li class="list-group-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<center>
+								<img src="images/fractal_showcase.png" class="img-rounded" width="100%">
+						</center>
+						</div>
+
+						<div class="col-sm-9">
+							<div class="row">
+								<h3>
+									Fractal Calibration for Long-tailed object Detection
+								</h3>
+							</div>
+							<div class="row">
+								<h4>
+									<b>Konstantinos Panagiotis Alexandridis</b>; Ismail Elezi; Jiankang Deng; Anh Nguyen;  Shan Luo; 
+								</h4>
+							</div>
+							<div class="row">
+								<h4>
+									CVPR 2025 - Conference on Computer Vision and Pattern Recognition
+								</h4>
+							</div>
+							<div class="row">
+								<a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2410.11774v2" role="button">Arxiv</a>
+								<a class="btn btn-success btn-sm" href="https://github.com/kostas1515/FRACAL" role="button">Code</a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<center>
+								<img src="images/aglu_showcase.png" class="img-rounded" width="100%">
+						</center>
+						</div>
+
+						<div class="col-sm-9">
+							<div class="row">
+								<h3>
+									Adaptive Parametric Activation (Oral)
+								</h3>
+							</div>
+							<div class="row">
+								<h4>
+									<b>Konstantinos Panagiotis Alexandridis</b>; Jiankang Deng; Anh Nguyen;  Shan Luo; 
+								</h4>
+							</div>
+							<div class="row">
+								<h4>
+									ECCV2024 - European Conference on Computer Vision
+								</h4>
+							</div>
+							<div class="row">
+								<a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2407.08567" role="button">Arxiv</a>
+								<a class="btn btn-primary btn-sm" href="./pdf/apa_poster.pdf" role="button">Poster</a>
+								<a class="btn btn-success btn-sm" href="https://github.com/kostas1515/AGLU" role="button">Code</a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<center>
+								<img src="images/iif_showcase.png" class="img-rounded" width="100%">
+						</center>
+						</div>
+
+						<div class="col-sm-9">
+							<div class="row">
+								<h3>
+									Inverse Image Frequency for Long-tailed Image Recognition
+								</h3>
+							</div>
+							<div class="row">
+								<h4>
+									<b>Konstantinos Panagiotis Alexandridis</b>; Shan Luo; Anh Nguyen; Jiankang Deng; Stefanos Zafeiriou
+								</h4>
+							</div>
+							<div class="row">
+								<h4>
+									IEEE - Transactions in Image Processing 2023 - ICCASP2024 (SPS-Track)
+								</h4>
+							</div>
+							<div class="row">
+								<a class="btn btn-primary btn-sm" href="https://ieeexplore.ieee.org/document/10284731" role="button">IEEE</a>
+								<a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2209.04861" role="button">Arxiv</a>
+								<a class="btn btn-primary btn-sm" href="./pdf/iif_poster.pdf" role="button">Poster</a>
+								<a class="btn btn-success btn-sm" href="https://github.com/kostas1515/iif" role="button">Code</a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<center>
+								<img src="images/gumbel_showcase.jpg" class="img-rounded" width="100%">
+						</center>
+						</div>
+
+						<div class="col-sm-9">
+							<div class="row">
+								<h3>
+									Long tailed Instance Segmentation using Gumbel Optimised Loss 
+								</h3>
+							</div>
+							<div class="row">
+								<h4>
+									<b>Konstantinos Panagiotis Alexandridis</b>; Jiankang Deng; Anh Nguyen;  Shan Luo; 
+								</h4>
+							</div>
+							<div class="row">
+								<h4>
+									ECCV2022 - European Conference on Computer Vision
+								</h4>
+							</div>
+							<div class="row">
+								<a class="btn btn-primary btn-sm" href="./pdf/6148.mp4" role="button">Video</a>
+								<a class="btn btn-primary btn-sm" href="./pdf/06148.pdf" role="button">Poster</a>
+								<a class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2207.10936" role="button">Arxiv</a>
+								<a class="btn btn-success btn-sm" href="https://github.com/kostas1515/GOL" role="button">Code</a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+				<li class="list-group-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<center>
+								<img src="images/thesis_showcase.png" class="img-rounded" width="100%">
+						</center>
+						</div>
+
+						<div class="col-sm-9">
+							<div class="row">
+								<h3>
+									Long-tailed Object Recognition - Learning from Imbalanced Image Data 
+								</h3>
+							</div>
+							<div class="row">
+								<h4>
+									<b>Konstantinos Panagiotis Alexandridis</b>
+								</h4>
+							</div>
+							<div class="row">
+								<h4>
+									PhD Thesis 2024 - King's College London
+								</h4>
+							</div>
+							<div class="row">
+								<a class="btn btn-primary btn-sm" href="https://kclpure.kcl.ac.uk/ws/portalfiles/portal/271302902/2024_Alexandridis_Konstantinos_21165577_ethesis.pdf" role="button">Thesis</a>
+							</div>
+						</div>
+					</div>
+				</li>
+
+			</div> 
 		</div>
-		<div class="col-sm-6">
-			<center>
-					<img src="images/large_scale_det.jpg" class="img-rounded" width="100%">
-					<div class="caption">
-	          			Example of Object Detection
-	        		</div>
-			</center>
-		</div>
+
 	</div>
 
-	<div class="row" id="projects">
+	<div class="row" id="competitions">
 		<div class="col-sm-12 ">
-			<h1>My Projects</h1>
+			<h1>Competitions</h1>
 			<div class="list-group">
-				<li class="list-group-item">Inverse Image Frequency for Long-tailed Image Recognition - Accepted in IEEE Transactions in Image Processing 2023 <a style="margin-left:0.45em;margin-top:-0.45em;float:right;" class="btn btn-primary btn-sm" href="https://ieeexplore.ieee.org/document/10284731" role="button">IEEE</a> <a style="margin-top:-0.45em;float:right;" class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2209.04861" role="button">Arxiv</a><a style="margin-right:0.45em;margin-top:-0.45em;float:right;" class="btn btn-success btn-sm" href="https://github.com/kostas1515/iif" role="button">Code</a></li>
-				<li class="list-group-item">Long tailed Instance Segmentation using Gumbel Optimised Loss - Accepted in ECCV2022 <a style="margin-top:-0.45em;margin-left:0.45em;float:right;" class="btn btn-primary btn-sm" href="./pdf/6148.mp4" role="button">Video</a><a style="margin-top:-0.45em;margin-left:0.45em;float:right;" class="btn btn-primary btn-sm" href="./pdf/06148.pdf" role="button">Poster</a><a style="margin-top:-0.45em;float:right;" class="btn btn-primary btn-sm" href="https://arxiv.org/abs/2207.10936" role="button">Arxiv</a><a style="margin-right:0.45em;margin-top:-0.45em;float:right;" class="btn btn-success btn-sm" href="https://github.com/kostas1515/GOL" role="button">Code</a></li>
-				<li class="list-group-item">Using Extreme Value Distribution for Long tailed detection - Poster in the Student Session AIUK 2022 <a style="margin-top:-0.45em;float:right;" class="btn btn-primary btn-sm" href="pdf/Long_Tail_Detection_poster.pdf" role="button">Poster</a></li>
-				<li class="list-group-item">Scalable Voting Classifier based on Genetic Algorithms-Siemens AI Challenge <a style="margin-top:-0.45em;float:right;" class="btn btn-primary btn-sm" href="pdf/Scalable Voting Approach based on Genetic Algorithms.pdf" role="button">Technical Report</a> <a style="margin-right:0.45em;margin-top:-0.45em;float:right;" class="btn btn-success btn-sm" href="https://github.com/kostas1515/siemans_ai_competition" role="button">Code</a></li>
-				<li class="list-group-item">Team UoL HPC-CIUK2020 HPC Cluster Competition<a style="margin-top:-0.45em;float:right;" class="btn btn-info btn-sm" href="https://www.scd.stfc.ac.uk/Pages/CIUK-2020-Cluster-Challenge.aspx" role="button">Website</a></li>
-			  </div> 
+				<li class="list-group-item"><h4>Scalable Voting Classifier based on Genetic Algorithms-Siemens Mobility 2021 AI Challenge </h4><a style="margin-top:-3em;float:right;" class="btn btn-primary btn-sm" href="pdf/Scalable Voting Approach based on Genetic Algorithms.pdf" role="button">Technical Report</a> <a style="margin-right:10em;margin-top:-3em;float:right;" class="btn btn-success btn-sm" href="https://github.com/kostas1515/siemans_ai_competition" role="button">Code</a></li>
+				<li class="list-group-item"><h4>Team UoL HPC-CIUK2020 HPC Cluster Competition</h4><a style="margin-top:-3em;float:right;" class="btn btn-info btn-sm" href="https://www.scd.stfc.ac.uk/Pages/CIUK-2020-Cluster-Challenge.aspx" role="button">Website</a></li>
+			</div> 
 		</div>
 
 	</div>
@@ -116,42 +273,10 @@
 	<div class="row" id="contact">
 		<div class="col-sm-12 ">
 			<h1>Contact</h1>
-		</div>
-			<div class="col-sm-6 sm_text">
-			<h3><small>
+			<h4>
 				You can reach me either by email at <b>alex.kostas@gmail.com</b> or connect with me on <a href="https://github.com/kostas1515/">Github</a> or <a href="https://www.linkedin.com/in/konstantinos-alexandridis-283772135/">Linkedin</a>.
-				If you also like chess you can challenge me on <a href='https://lichess.org/@/konsa15'>lichess</a>
-			</small></h3>
-		</div>
-		<!-- <div class="col-sm-6">
-			<h3><center>Current Groups</center></h3>
-			<div class="col-sm-12">
-				<a href="https://www.kcl.ac.uk/">King's College London</a>
-			</div>
-
-			<h3><center>Former Groups</center></h3>
-			<div class="col-sm-4">
-					<a href="https://www.liverpool.ac.uk">
-						<img src="images/liverpool_logo.svg" class="img-rounded" width="100%">
-					</a>
-			</div>
-				<div class="col-sm-4"><center>
-					<a href="https://www.liverpool.ac.uk/distributed-algorithms-cdt/">
-						<img src="images/cdt_log.png" class="img-rounded" width="100%">
-					</a>
-				</center>
-			</div>
-			<div class="col-sm-4">
-				<center>
-					<a href="https://smartlab.csc.liv.ac.uk/">
-						<img src="images/smartlab_logo.png" class="img-rounded" width="50%">
-					</a>
-				</center>
-			</div> -->
-				
-			</div>
-			
-		</div>
+				If you also like chess you can challenge me on <a href='https://lichess.org/@/konsa15'>lichess</a>.
+			</h4>				
 	</div>
 
 
